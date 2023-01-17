@@ -17,7 +17,7 @@ function ProductDetailToko() {
   const [data, setData] = useState({});
 
   const url =
-    "https://api.kampunganggurplumbungan.com/toko/alltoko.php?id=" + productId;
+    "http://milkapi.ciparimilkyland.com/alltoko.php?id=" + productId;
 
   console.log("urlnya" + { url });
   useEffect(() => {
@@ -41,49 +41,22 @@ function ProductDetailToko() {
         data.map((dinamis, key) => {
           return (
             <Container className="mt-5">
-              <Row className="row justify-content-md-center">
+                <Row className="row justify-content-md-center">
               <Col sm className="">
-              <Card  className="">
+                <h1 className="text-left">{dinamis.title}</h1>
+              <Card  className="mt-4">
+                  
                     <Card.Img
-                      key={dinamis.foto}
-                      placeholder="https://i.imgur.com/HcFFOqt.png"
+                      key={dinamis.image}
+                      // placeholder="https://i.imgur.com/HcFFOqt.png"
                       style={({ width: "100%" }, { height: "100%" })}
-                      src={dinamis.foto}
-                     
+                      src={dinamis.image}
+                     className="maxseparo cenimgdetail"
                     />
                   </Card>
                 </Col>
-                <Col sm>
-                <Card.Body>
-                    <h2>{dinamis.namatoko}</h2>
-                    <Card.Subtitle className="mb-2 text-muted mt-3">
-                      {" "}
-                      Pemilik : {dinamis.pemilik}
-                    </Card.Subtitle>
-                    <Card.Text className="text-left">
-                      <b>Kontak</b> : {dinamis.kontak}
-                    </Card.Text>
-                    <Card.Text className="text-left">
-                      <b>Instagram</b> : {dinamis.instaram}
-                    </Card.Text>
-                    <Card.Text className="text-left">
-                      <b>Pelayanan</b> : {dinamis.pelayanan}
-                    </Card.Text>
-
-
-                    {/* <Link to={`/products/${dinamis.id}`}><a>Selengkapnya</a></Link>  */}
-                    {/* <Button variant="primary" onClick={() => this.editBatik(dinamis.id)}>
-                                                    Edit
-                                                </Button> */}
-                  </Card.Body>
-                </Col>
+                <p className="text-left mx-3 mt-5">{dinamis.description}</p>
             
-              </Row>
-              <Row>
-                <Col>
-                <h5 className="mt-4">Jenis Anggur</h5>
-                <p className="text-left">{dinamis.jenisanggur}</p>
-                </Col>
               </Row>
             </Container>
           );

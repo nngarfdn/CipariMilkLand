@@ -25,16 +25,16 @@ function Home() {
           <Video/>
       </div>
 
-      <div id="layanan">
+      {/* <div id="layanan">
           <Layanan/>
-      </div>
+      </div> */}
 
   
 
 
-      <div className="footer mt-5">
+      {/* <div className="footer mt-5">
         <Footer/>
-      </div>
+      </div> */}
 
     </div>
     

@@ -20,7 +20,7 @@ function Header() {
           <img
             height="30"
             className="d-inline-block align-top mx-4"
-            src="https://i.imgur.com/FA00K4q.png"
+            src="https://i.imgur.com/vmltquu.png"
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" variant="dark" />
@@ -47,21 +47,21 @@ function Header() {
               <NavDropdown.Item href="/toko">Toko</NavDropdown.Item>
             </NavDropdown> */}
            
-            <Nav.Link className="text-header font-inter" href="#tentang">
+            {/* <Nav.Link className="text-header font-inter" href="#tentang">
               Tentang
-            </Nav.Link>
-            <Nav.Link className="text-header font-inter" href="#layanan">
+            </Nav.Link> */}
+            <Nav.Link className="text-header font-inter" href="#tentang">
               Informasi
             </Nav.Link>
 
-            <Nav.Link className="text-header font-inter" href="#fasilitas">
+            <Nav.Link className="text-header font-inter" href="#video">
               Ragam Produk
             </Nav.Link>
 
-            <Nav.Link className="text-header font-inter" href="/berita">
+            {/* <Nav.Link className="text-header font-inter" href="#fasilitas">
               Peta
-            </Nav.Link>
-            <Nav.Link className="text-header font-inter" href="/berita">
+            </Nav.Link> */}
+            <Nav.Link className="text-header font-inter" href="/toko">
               Outlet
             </Nav.Link>
 

@@ -26,11 +26,8 @@ class Video extends React.Component {
                 className="mt-1 maxwid"
                 src="https://i.imgur.com/Jx5o5LT.png"
               />
-              <p className="center my-2 mx-5 text-left pb-5 maxheigjt">
-                Kampung Anggur Plumbungan merupakan sebuah desa yang memberikan
-                wisata visual mengenai tanaman anggur. Berawal dari sebuah
-                kegemaran oleh salah satu pemuda, Kampung Anggur terus
-                berkembang menjadi sebuah wisata sejak tahun 2017.                 
+              <p className="d-flex justify-content-center my-4 mx-5 text-left pb-5 maxheigjt">
+                Produk unggulan di Cipari diantaranya Yogurt dan Susu.          
               </p>
                 </Col>
             </Row>

@@ -12,7 +12,7 @@ class Toko extends Component {
   }
 
   componentDidMount() {
-    fetch("https://api.kampunganggurplumbungan.com/toko/alltoko.php")
+    fetch("http://milkapi.ciparimilkyland.com/alltoko.php")
       .then((response) => response.json())
       .then((data) => {
         this.setState({ users: data.users });
@@ -22,15 +22,15 @@ class Toko extends Component {
   render() {
     return (
       <div>
+      
         <Jumbotron>
           <Container>
-          <h2 className="mt-5"><b>Toko Anggur</b></h2>
-            <p>Temukan Toko anggur favoritmu sekarang !</p>
+          <h2 className="mt-5"><b>Outlet Cipari Milky Land</b></h2>
             <br></br>
             <Row>
               {this.state.users.map((dinamis, key) => {
                 return (
-                  <Col sm xs={{ span: 6, order: 2 }} md={{ span: 6, order: 2 }}>
+                  <Col sm xs={{ span: 12, order: 1 }} md={{ span: 12, order: 1 }}>
                       <Link to={`/detailtoko/${dinamis.id}`} className="link">
                     <Card
                       className="mt-3"
@@ -39,16 +39,16 @@ class Toko extends Component {
                     >
                     
                       <Card.Img
-                        key={dinamis.foto}
+                        key={dinamis.image}
                         style={({ width: "100%" }, { height: "150px" })}
-                        src={dinamis.foto}
+                        src={dinamis.image}
                         className="cenimg"
                       />
                       <Card.Body>
-                        <Card.Text classsName="fcard max-lines">{dinamis.namatoko}</Card.Text>
+                        <Card.Text classsName="fcard max-lines">{dinamis.title}</Card.Text>
                       
                         <Card.Text className="max-lines-toko">
-                          {/* Layanan : {dinamis.pelayanan} */}
+                          {/* Layanan : {dinamis.description} */}
                         </Card.Text>
 
           
