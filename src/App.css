@@ -1,0 +1,413 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.max-lines {
+  display: block;/* or inline-block */
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 2.5em;
+  /* line-height: 1.8em; */
+}
+
+.button-green-basic {
+  background-color: #02BE6E; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.text-color-green {
+  color: #02BE6E;
+}
+
+.text-font {
+  color: #626262;
+}
+
+.btn {
+  outline-color: #02BE6E !important;
+}
+
+
+
+.btn-green-dash {
+  padding:0.6em 2em;
+  border-radius: 8px;
+  color:#fff;
+  background-color:#02BE6E;
+  font-size:1.1em;
+  border:0;
+  cursor:pointer;
+  margin:1em;
+}
+
+
+.button-rounded-12 {
+  border-radius: 12px;
+}
+
+.max-lines-toko {
+  display: block;/* or inline-block */
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 4.0em;
+  line-height: 1.3em;
+}
+
+
+.mhe{
+  height: 28px;
+  margin-right: 40%;
+}
+
+.bg-green{
+  background: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.text-header{
+  color: #18191F;
+}
+
+.font-inter{
+  font-family: 'Inter', sans-serif;
+}
+
+.cardx:hover{
+  box-shadow: 8px 8px 5px #4AB246;    
+  transform: scale(1.1);
+}
+
+.font-poppins{
+  font-family: Poppins;
+}
+
+.hitam{
+  color: black ;
+}
+
+.link {
+  color: black;
+}
+.link:hover {
+   color: black;
+   text-decoration: none;
+}
+
+.ic-petik{
+  max-width: 49px;
+  max-height: 64px;
+}
+
+.ic-bibit{
+  max-width: 84px;
+  max-height: 64px;
+}
+
+
+.ic-media{
+  max-width: 33px;
+  max-height: 64px;
+}
+
+.ic-makanan{
+  max-width: 60px;
+  max-height: 64px;
+}
+
+.ic-odong{
+  max-width: 100px;
+  max-height: 64px;
+}
+
+.map{
+  min-height: 200px;
+}
+
+.video{
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 280px;
+  margin-bottom: 16px;
+
+}
+
+.ic-sampah{
+  max-width: 50px;
+  max-height: 64px;
+}
+
+.background-footer{
+  background-color: #0B0D17;
+}
+
+.{
+  max-width: 120px;
+}
+
+.font-norican{
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+}
+
+.font-tentang{
+  color: #02BE6E;
+  font-weight: bold;
+}
+
+body, html { 
+  font-family: 'Inter', sans-serif;
+  margin:0;
+   padding:0;
+   height:100%;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.colorsatu {
+  background-color: #61dafb;
+}
+
+.bg-puple{
+  background-color: #3A1D4C;
+}
+
+
+.colordua {
+  background-color: blue;
+}
+
+.navbar-hamburger {
+  background-image: url("data:image/svg+xml,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+.rounded{
+  border-radius: 20%;
+}
+
+.opac{
+  opacity: 80%;
+}
+
+
+.card{
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+cursor: pointer;
+}
+
+.card:hover{
+   transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.vcenter {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.maxwid{
+  max-width: 70%;
+}
+
+.maxheigjt{
+  max-height: 50%;
+}
+
+.background-image {
+  background-image: url("https://i.imgur.com/XTeFfOb.png");
+  background-size: cover;
+  background-position: top;
+  min-height: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.background-tentang {
+  background-image: url("https://i.imgur.com/7ykSHxA.png");
+  background-size: cover;
+  background-position: top;
+  min-height: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.background-video {
+  background-image: url("https://i.imgur.com/i5Bwk0V.png");
+  background-size: cover;
+  background-position: top;
+  min-height: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0;
+  margin-right: auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+.logofooter{
+  max-width: 120px;
+}
+
+.footer {
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  margin-bottom: 0;
+  background-color: #0B0D17;
+  color: white;
+  font-size: small;
+  padding: 4px;
+  text-align: center;
+  
+}
+
+.text-footer{
+  color: #0B0D17;
+}
+
+.iconw{
+  color: white;
+}
+
+.fcard{
+  font-size: medium;
+}
+
+.coloranggur{
+  color: #8C30F5;
+  font-size: small;
+  font-style: italic;
+  display: block;/* or inline-block */
+  text-overflow: ellipsis;
+  text-overflow: clip;
+  /* word-wrap: break-word; */
+  word-wrap: none;
+  overflow: hidden;
+  /* margin-bottom: 10px; */
+  max-height: 2.2em;
+
+}
+
+
+
+.cenimg {
+  /* object-fit: none; Do not scale the image */
+  object-fit: cover;
+  object-position: center; /* Center the image within the element */
+  width: 100%;
+  max-height: 180px;
+
+}
+
+.cenimgnews {
+  /* object-fit: none; Do not scale the image */
+  object-fit: cover;
+  object-position: center; /* Center the image within the element */
+  width: 100%;
+  max-height: 250px;
+
+}
+
+.cenimgdetail {
+  object-fit: cover; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  width: 100%;
+  max-height: 400px;
+
+}
+
+.maxseparo{
+  max-height: 400px;
+  
+}
+
+.bdradius{
+  border-radius: 10px;
+}
+.mwanggur{
+  max-width: 400px;
+  max-height: 300px;
+}
+
+.marto{
+  margin-top: 5px;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+
+
+}
